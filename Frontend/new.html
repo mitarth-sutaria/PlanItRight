@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: white;
+        }
+
+        .gallery {
+            margin-top: 5em;
+            height: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .gallery img {
+            height: 20em;
+            margin-right: 20px;
+        }
+
+        .gallery::-webkit-scrollbar {
+            display: none;
+        }
+
+        .gallery-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10% auto;
+        }
+
+        #backbtn,
+        #nextbtn {
+            cursor: pointer;
+            width: 8em;
+            margin: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="gallery">
+        <img src="images/thumbnail-4.webp" alt="">
+        <img src="images/thumbnail-4.webp" alt="">
+        <img src="images/thumbnail-4.webp" alt="">
+        <img src="images/thumbnail-4.webp" alt="">
+    </div>
+
+</body>
+
+</html>

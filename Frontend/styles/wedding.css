@@ -1,0 +1,162 @@
+:root {
+    --primary-color: rgb(14, 59, 70);
+    --secondary-color: rgb(67, 210, 139);
+    --hover-color: rgba(174, 235, 229, 0.74);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 59, 70);
+    color:  rgba(255, 255, 255, 0.74);
+    transition: background-color 0.3s ease;
+}
+
+#Wedding {
+    max-width: 80vw;
+    margin: 20px auto;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+#budget-form,
+#categories-form {
+    margin-right: 60px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color:  rgba(255, 255, 255, 0.74);
+}
+
+input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 4px;
+    background-color: rgb(98, 215, 157);
+    color: var(--hover-color);
+    transition: background-color 0.3s ease, border 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid rgb(67, 210, 139);
+    background-color: rgba(20, 99, 60, 0.24);
+}
+
+button {
+    background-color: rgba(14, 59, 70, 0.63);
+    color: rgba(255, 255, 255, 0.74);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(14, 59, 70, 0.63);
+    color: rgb(255, 231, 231);
+    box-shadow: 0 0 10px rgba(14, 59, 70, 0.79);
+}
+
+#budget-summary h2 {
+    margin-bottom: 12px;
+    color: rgba(14, 59, 70, 0.79);
+}
+
+#categories {
+    list-style-type: none;
+    padding: 0;
+}
+.setTotalBudget{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.category {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(174, 235, 229, 0.74);
+    padding: 10px 0;
+    color: whitesmoke;
+}
+
+#categories-form ul {
+    list-style-type: none;
+    padding: 0;
+    margin-right: 60px;
+}
+
+#categories-form li {
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+
+
+.PlanItRight{
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+.flashcard-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.flashcard {
+    background-color: rgba(174, 235, 229, 0.74);
+    border: 1px solid rgb(67, 210, 139);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+.flashcard {
+    background-color: rgba(174, 235, 229, 0.74);
+    color: #3e3e3e;
+}
+
+#suggestions li {
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#suggestions li:hover {
+    text-decoration: underline;
+    color:whitesmoke ;
+}
+
+#suggestions li:active {
+    text-decoration: underline  ;
+}
+
+.flashcard:hover {
+    transform: scale(1.03);
+}
+
+.details {
+    display: none;
+
+}
+
+.details p {
+    font-size: 14px;
+    color: #050404;
+}

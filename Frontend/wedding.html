@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Management System</title>
+    <link rel="stylesheet" href="styles/wedding.css">
+</head>
+<body>
+    <div id="Wedding">
+        <h1>Wedding</h1>
+
+        <div id="budget-form">
+            <label for="total-budget">Total Budget:</label>
+            <input type="number" min="0" id="total-budget" placeholder="Enter total budget">
+            <div class="setTotalBudget">
+                
+                <button onclick="setTotalBudget()">Set Budget</button>
+            </div>
+        </div>
+
+        <div id="categories-form">
+            <label for="category">Category:</label>
+            <div class="dropdown">
+                <input type="text" id="category" placeholder="Enter category name" onfocus="showSuggestions()">
+                <ul id="suggestions"></ul>
+            </div>
+            <div class="PlanItRight">
+
+                <button onclick="navigateToOptionsPage()">PlanItRight</button>
+            </div>
+        </div>
+
+        <div id="budget-summary">
+            <h2>Budget Summary</h2>
+            <ul id="categories"></ul>
+            <p>Remaining Budget: $<span id="remaining-budget">0.00</span></p>
+        </div>
+
+        <!-- Flashcard containers for each category -->
+        <div id="flashcard-containers">
+            <!-- Flashcards will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="javascript/wedding.js"></script>
+</body>
+</html>

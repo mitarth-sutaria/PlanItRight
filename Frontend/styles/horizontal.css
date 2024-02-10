@@ -1,0 +1,97 @@
+.gallery {
+    margin-top: 4em;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.gallery img {
+    height: 20em;
+    margin-right: 20px;
+}
+
+.gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+
+
+.gallery-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10% auto;
+}
+
+.gallery h3{
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    height: 22em;
+}
+
+.image-container img {
+    display: block;
+    height: 22em;
+    width: 30em;
+    object-fit: cover;
+    transition: .3s ease-in-out;
+}
+
+.image-container .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.image-container .text {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image-container:hover img {
+    filter: blur(3px);
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.custom-hr {
+    border: none; /* Remove default border */
+    height: 3px; /* Set thickness */
+    background-color: rgb(255, 167, 3); /* Set color */
+    width: 5em;
+}
+
+.gallery2{
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto auto auto auto;
+    scroll-behavior: smooth;
+} 

@@ -1,0 +1,40 @@
+body{
+    padding: 0;
+    margin: 0;
+    padding-bottom: 1000px;
+}
+
+*{
+    font-family: "Century Gothic", Sans-Serif;
+    font-weight: bold;
+}
+
+.sticky-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; 
+    padding: 10px 20px;
+    background-color: rgb(14, 59, 70);
+    color: white;
+    border: none;
+    border-radius: 5em;
+    animation: glow 1s infinite;
+}
+
+@keyframes glow {
+    0% { box-shadow: 0 0 3px #439ebc, 0 0 10px #439ebc, 0 0 10px #439ebc, 0 0 20px #439ebc; }
+    50% { box-shadow: 0 0 5px #439ebc, 0 0 20px #439ebc, 0 0 15x #439ebc, 0 0 40px #439ebc; }
+    100% { box-shadow: 0 0 3px #439ebc, 0 0 10px #add8e6, 0 0 10px #439ebc, 0 0 20px #439ebc; }
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin-top: 30px;
+}
+.description p{
+    text-align: center;
+    margin: 1em 6em;
+}
+

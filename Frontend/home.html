@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/menubar.css">
+    <link rel="stylesheet" href="styles/horizontal.css">
+</head>
+
+<body>
+    <div class="header">
+
+        
+        <div class="left-section">
+            <button class="nav-button">
+                <img src="icons/home.svg" alt="" class="icon">
+            </button>
+
+            <div class="search-container">
+                <button id="search-icon" class="nav-button">
+                    <img src="icons/search.svg" alt="Search" class="icon">
+                </button>
+                <input id="search-input" type="text" class="search-input" style="display: none;">
+            </div>
+        </div>
+
+
+        <div class="middle-section">
+            PlanItRight
+        </div>
+
+
+        <div class="right-section">
+            <button class="login-button"><a href="Login.html" style="text-decoration: none; color: black;">Sign In</a></button>
+        </div>
+    </div>
+
+    <div class="gallery">
+
+        <div class="image-container">
+            <img src="images/wedding.webp" alt="Image Name">
+            <a class="overlay" href="wedding.html">
+                <div class="text">wedding</div>
+            </a>
+        </div>
+        <div class="image-container">
+            <img src="images/concert.webp" alt="Image Name">
+            <div class="overlay">
+                <div class="text">concert</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/competition.jpg" alt="Image Name">
+            <div class="overlay">
+                <div class="text">competition</div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="images/seminar.avif" alt="Image Name">
+            <div class="overlay">
+                <div class="text">seminar</div>
+            </div>
+        </div>
+    </div>
+    <hr class="custom-hr">
+    
+    <div class="description">
+        <p style="font-size: 3em;">A Complete Event Management Solution</p>
+        <div style="margin-top: 10px; font-size: large; text-align: center;">The most successful event is the one that achieves your goal and exceeds you expectations. PlanItRight does just that.</div>
+        <p style="text-align: justify;">From simplifying expense tracking to providing actionable insights, our event budget management website is dedicated to helping users save both time and money, so they can focus on creating memorable experiences without breaking the bank. With features such as vendor comparison tools and negotiation support, our website equips users with the tools and knowledge necessary to secure the best deals and discounts, ultimately saving them money without compromising on quality.</p>
+    </div>
+    
+    
+    <div class="gallery">
+        <img src="images/competition2.jpg" alt="" >
+        <img src="images/party.jpg" alt="">
+        <img src="images/wedding.jpg" alt="">
+        <img src="images/seminar.jpg" alt="">
+    </div>
+
+    <button class="sticky-button">Get Started</button>
+        <script src="javascript/search-icon.js"></script>
+</body>
+
+</html>
